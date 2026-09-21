@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriConnect</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f8f1;
+            color: #222;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 8px;
+        }
+
+        nav {
+            background-color: #1b5e20;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            color: #2e7d32;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 14px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .have {
+            background-color: #388e3c;
+            color: white;
+        }
+
+        .need {
+            background-color: #f9a825;
+            color: white;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🌱 AgriConnect</h1>
+        <p>Connecting Farmers, Products and Needs</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+
+        <h2>Welcome to AgriConnect</h2>
+
+        <p>
+            A platform where farmers can connect with each other
+            and exchange agricultural products.
+        </p>
+
+        <div class="buttons">
+
+            <button class="have" onclick="showMessage('I Have')">
+                📦 I Have
+            </button>
+
+            <button class="need" onclick="showMessage('I Need')">
+                🔎 I Need
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Features -->
+    <section id="products">
+
+        <h2>What You Can Do</h2>
+
+        <div class="features">
+
+            <div class="card">
+                <h3>📦 I Have</h3>
+                <p>
+                    Upload products you have with photo,
+                    price, quantity and location.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔎 I Need</h3>
+                <p>
+                    Add agricultural products that
+                    you are looking for.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤝 Matching</h3>
+                <p>
+                    Find users whose products match
+                    your requirements.
